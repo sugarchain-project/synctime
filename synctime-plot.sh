@@ -1,8 +1,9 @@
 #!/bin/bash
 
 ## INIT
-FILE_NAME_1="uncached_reindex.log.csv"
-FILE_NAME_2="cached_reindex.log.csv"
+FILE_NAME_1="uncached_IBD.log.csv"
+FILE_NAME_2="cached_IBD.log.csv"
+FILE_NAME_3="cached_IBD_1_p2000.log.csv"
 
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
@@ -29,13 +30,15 @@ set format y '%.0f'
 
 set grid xtics;
 
-set key top left invert;
+# set key top left invert;
+set key center right invert;
 set key box opaque;
 set key noenhanced;
 
 plot \
 "$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "blue" lw 1.0, \
 "$FILE_NAME_2" using 2:3 axis x1y1 w l title "$FILE_NAME_2" lc rgb "red" lw 1.0, \
+"$FILE_NAME_3" using 2:3 axis x1y1 w l title "$FILE_NAME_3" lc rgb "green" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 
