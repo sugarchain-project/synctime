@@ -9,7 +9,7 @@ FILE_NAME_4="cached_IBD_2_p2000_w2048.log.csv"
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
 gnuplot -persist <<-EOFMarker
-set terminal pngcairo size 1500,750 enhanced font "Ubuntu,12";
+set terminal pngcairo size 1500,1000 enhanced font "Ubuntu,12";
 set output "$OUTPUT_PNG";
 
 set title "Synchronization Time of Sugarchain Yumekawa";
@@ -38,9 +38,9 @@ set key noenhanced;
 
 plot \
 "$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "grey" lw 1.0, \
-"$FILE_NAME_2" using 2:3 axis x1y1 w l title "$FILE_NAME_2" lc rgb "red" lw 1.0, \
+"$FILE_NAME_2" using 2:3 axis x1y1 w l title "$FILE_NAME_2" lc rgb "purple" lw 1.0, \
 "$FILE_NAME_3" using 2:3 axis x1y1 w l title "$FILE_NAME_3" lc rgb "green" lw 1.0, \
-"$FILE_NAME_4" using 2:3 axis x1y1 w l title "$FILE_NAME_4" lc rgb "purple" lw 1.0,
+"$FILE_NAME_4" using 2:3 axis x1y1 w l title "$FILE_NAME_4" lc rgb "red" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 

@@ -33,5 +33,5 @@ with open(logFilePath, "r") as logFile, open(outputFilePath, "w") as csvFile:
                 # write CSV
                 csvFile.write("{0},{1},{2}\n".format(date, td_in_seconds, height))
 
-                # output every 10 minutes
-                _td = _td + timedelta(minutes=10)
+                # output every 1 minutes
+                _td = _td + timedelta(minutes=1)
