@@ -40,7 +40,7 @@ set key box opaque;
 set key noenhanced;
 
 plot \
-"$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "grey" lw 1.0,
+"$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "blue" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 
