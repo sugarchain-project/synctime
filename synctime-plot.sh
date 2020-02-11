@@ -1,12 +1,13 @@
 #!/bin/bash
 
 ## INIT
-FILE_NAME_1="uncached_IBD.log.csv"
-FILE_NAME_2="cached_IBD.log.csv"
-FILE_NAME_3="cached_IBD_1_p2000.log.csv"
-FILE_NAME_4="cached_IBD_2_p2000_w2048.log.csv"
-FILE_NAME_5="cached_IBD_3_p2000_w4096.log.csv"
-FILE_NAME_6="cached_IBD_4_p16_w1024.log.csv"
+FILE_NAME_1="debug.log.csv"
+# FILE_NAME_1="uncached_IBD.log.csv"
+# FILE_NAME_2="cached_IBD.log.csv"
+# FILE_NAME_3="cached_IBD_1_p2000.log.csv"
+# FILE_NAME_4="cached_IBD_2_p2000_w2048.log.csv"
+# FILE_NAME_5="cached_IBD_3_p2000_w4096.log.csv"
+# FILE_NAME_6="cached_IBD_4_p16_w1024.log.csv"
 
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
@@ -39,12 +40,7 @@ set key box opaque;
 set key noenhanced;
 
 plot \
-"$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "grey" lw 1.0, \
-"$FILE_NAME_2" using 2:3 axis x1y1 w l title "$FILE_NAME_2" lc rgb "purple" lw 1.0, \
-"$FILE_NAME_3" using 2:3 axis x1y1 w l title "$FILE_NAME_3" lc rgb "green" lw 1.0, \
-"$FILE_NAME_4" using 2:3 axis x1y1 w l title "$FILE_NAME_4" lc rgb "blue" lw 1.0, \
-"$FILE_NAME_5" using 2:3 axis x1y1 w l title "$FILE_NAME_5" lc rgb "orange" lw 1.0, \
-"$FILE_NAME_6" using 2:3 axis x1y1 w l title "$FILE_NAME_6" lc rgb "red" lw 1.0,
+"$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "grey" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 
