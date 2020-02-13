@@ -15,3 +15,6 @@ Benchmark blockchain synchronization time during [IBD](https://blog.bitmex.com/b
 ```bash
 grep "progress=1.000000" ~/.sugarchain/debug.log | head -1
 ```
+
+## Result
+![alt text](https://github.com/sugarchain-project/synctime/blob/master/png/synctime.png?raw=true)
