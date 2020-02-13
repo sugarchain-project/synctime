@@ -36,8 +36,8 @@ set format y '%.0f'
 
 set grid xtics;
 
-# set key top left invert;
-set key center right invert;
+set key top left invert;
+# set key center right invert;
 set key box opaque;
 set key noenhanced;
 
