@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## INIT
+FILE_NAME_0="uncached.log.csv"
 FILE_NAME_1="debug.log.csv"
 FILE_NAME_2="debug2.log.csv"
 FILE_NAME_3="debug3.log.csv"
@@ -50,6 +51,7 @@ set key box opaque;
 set key noenhanced;
 
 plot \
+"$FILE_NAME_0" using 2:3 axis x1y1 w l title "$FILE_NAME_0" lc rgb "#aaaaaa" lw 1.0, \
 "$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "blue" lw 1.0, \
 "$FILE_NAME_2" using 2:3 axis x1y1 w l title "$FILE_NAME_2" lc rgb "red" lw 1.0, \
 "$FILE_NAME_3" using 2:3 axis x1y1 w l title "$FILE_NAME_3" lc rgb "purple" lw 1.0, \
