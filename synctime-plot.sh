@@ -8,6 +8,9 @@ FILE_NAME_4="debug4.log.csv"
 FILE_NAME_5="debug5.log.csv"
 FILE_NAME_6="debug6.log.csv"
 FILE_NAME_7="debug7.log.csv"
+FILE_NAME_8="debug8.log.csv"
+FILE_NAME_9="debug9.log.csv"
+FILE_NAME_10="debug10.log.csv"
 
 # FILE_NAME_1="uncached_IBD.log.csv"
 # FILE_NAME_2="cached_IBD.log.csv"
@@ -53,7 +56,10 @@ plot \
 "$FILE_NAME_4" using 2:3 axis x1y1 w l title "$FILE_NAME_4" lc rgb "orange" lw 1.0, \
 "$FILE_NAME_5" using 2:3 axis x1y1 w l title "$FILE_NAME_5" lc rgb "#ccffff" lw 1.0, \
 "$FILE_NAME_6" using 2:3 axis x1y1 w l title "$FILE_NAME_6" lc rgb "#ffccff" lw 1.0, \
-"$FILE_NAME_7" using 2:3 axis x1y1 w l title "$FILE_NAME_7" lc rgb "#00ffcc" lw 1.0,
+"$FILE_NAME_7" using 2:3 axis x1y1 w l title "$FILE_NAME_7(cee8630)" lc rgb "#00ffcc" lw 1.0, \
+"$FILE_NAME_8" using 2:3 axis x1y1 w l title "$FILE_NAME_8(7dd2e3e)" lc rgb "#ccff00" lw 1.0, \
+"$FILE_NAME_9" using 2:3 axis x1y1 w l title "$FILE_NAME_9(8683428)" lc rgb "#cc00cc" lw 1.0, \
+"$FILE_NAME_10" using 2:3 axis x1y1 w l title "$FILE_NAME_10(f9d0998)" lc rgb "#00aabb" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 
