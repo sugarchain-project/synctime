@@ -12,9 +12,14 @@ FILE_NAME_7="debug7.log.csv"
 FILE_NAME_8="debug8.log.csv"
 FILE_NAME_9="debug9.log.csv"
 FILE_NAME_10="debug10.log.csv"
+# bad failure
 FILE_NAME_11="debug11-9b5c0cb.log.csv"
 FILE_NAME_12="debug12-827b0bd.log.csv"
 FILE_NAME_13="debug13-cee8630.log.csv"
+# retest
+FILE_NAME_14="debug14-9b5c0cb.log.csv"
+FILE_NAME_15="debug15-827b0bd.log.csv"
+FILE_NAME_16="debug16-cee8630.log.csv"
 
 # FILE_NAME_1="uncached_IBD.log.csv"
 # FILE_NAME_2="cached_IBD.log.csv"
@@ -54,20 +59,14 @@ set key box opaque;
 set key noenhanced;
 
 plot \
-"$FILE_NAME_0" using 2:3 axis x1y1 w l title "$FILE_NAME_0" lc rgb "#aaaaaa" lw 1.0, \
-"$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "blue" lw 1.0, \
-"$FILE_NAME_2" using 2:3 axis x1y1 w l title "$FILE_NAME_2" lc rgb "red" lw 1.0, \
-"$FILE_NAME_3" using 2:3 axis x1y1 w l title "$FILE_NAME_3" lc rgb "purple" lw 1.0, \
-"$FILE_NAME_4" using 2:3 axis x1y1 w l title "$FILE_NAME_4" lc rgb "orange" lw 1.0, \
-"$FILE_NAME_5" using 2:3 axis x1y1 w l title "$FILE_NAME_5" lc rgb "#ccffff" lw 1.0, \
-"$FILE_NAME_6" using 2:3 axis x1y1 w l title "$FILE_NAME_6" lc rgb "#ffccff" lw 1.0, \
-"$FILE_NAME_7" using 2:3 axis x1y1 w l title "$FILE_NAME_7(cee8630)" lc rgb "#00ffcc" lw 1.0, \
-"$FILE_NAME_8" using 2:3 axis x1y1 w l title "$FILE_NAME_8(7dd2e3e)" lc rgb "#ccff00" lw 1.0, \
-"$FILE_NAME_9" using 2:3 axis x1y1 w l title "$FILE_NAME_9(8683428)" lc rgb "#cc00cc" lw 1.0, \
-"$FILE_NAME_10" using 2:3 axis x1y1 w l title "$FILE_NAME_10(f9d0998)" lc rgb "#00aabb" lw 1.0, \
-"$FILE_NAME_11" using 2:3 axis x1y1 w l title "$FILE_NAME_11" lc rgb "#aa00bb" lw 1.0, \
-"$FILE_NAME_12" using 2:3 axis x1y1 w l title "$FILE_NAME_12" lc rgb "#aacc00" lw 1.0, \
-"$FILE_NAME_13" using 2:3 axis x1y1 w l title "$FILE_NAME_13" lc rgb "#f0ccf0" lw 1.0,
+"$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "#0000cc" lw 1.0, \
+"$FILE_NAME_7" using 2:3 axis x1y1 w l title "$FILE_NAME_7(cee8630)" lc rgb "#e0e0e0" lw 1.0, \
+"$FILE_NAME_8" using 2:3 axis x1y1 w l title "$FILE_NAME_8(7dd2e3e)" lc rgb "#e0e0e0" lw 1.0, \
+"$FILE_NAME_9" using 2:3 axis x1y1 w l title "$FILE_NAME_9(8683428)" lc rgb "#e0e0e0" lw 1.0, \
+"$FILE_NAME_10" using 2:3 axis x1y1 w l title "$FILE_NAME_10(f9d0998)" lc rgb "#e0e0e0" lw 1.0, \
+"$FILE_NAME_14" using 2:3 axis x1y1 w l title "$FILE_NAME_14" lc rgb "#00aabb" lw 1.0, \
+"$FILE_NAME_15" using 2:3 axis x1y1 w l title "$FILE_NAME_15" lc rgb "#aabb00" lw 1.0, \
+"$FILE_NAME_16" using 2:3 axis x1y1 w l title "$FILE_NAME_16" lc rgb "#aa00cc" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 
