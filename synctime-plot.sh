@@ -20,6 +20,9 @@ FILE_NAME_13="debug13-cee8630.log.csv"
 FILE_NAME_14="debug14-9b5c0cb.log.csv"
 FILE_NAME_15="debug15-827b0bd.log.csv"
 FILE_NAME_16="debug16-cee8630.log.csv"
+# moonlight(v30) vs bloomy(v24)
+FILE_NAME_17="debug17-moonlight.log.csv"
+FILE_NAME_18="debug18-bloomy.log.csv"
 
 # FILE_NAME_1="uncached_IBD.log.csv"
 # FILE_NAME_2="cached_IBD.log.csv"
@@ -66,7 +69,9 @@ plot \
 "$FILE_NAME_10" using 2:3 axis x1y1 w l title "$FILE_NAME_10(f9d0998)" lc rgb "#e0e0e0" lw 1.0, \
 "$FILE_NAME_14" using 2:3 axis x1y1 w l title "$FILE_NAME_14" lc rgb "#00aabb" lw 1.0, \
 "$FILE_NAME_15" using 2:3 axis x1y1 w l title "$FILE_NAME_15" lc rgb "#aabb00" lw 1.0, \
-"$FILE_NAME_16" using 2:3 axis x1y1 w l title "$FILE_NAME_16" lc rgb "#aa00cc" lw 1.0,
+"$FILE_NAME_16" using 2:3 axis x1y1 w l title "$FILE_NAME_16" lc rgb "#aa00cc" lw 1.0, \
+"$FILE_NAME_17" using 2:3 axis x1y1 w l title "$FILE_NAME_17" lc rgb "#af0fcf" lw 1.0, \
+"$FILE_NAME_18" using 2:3 axis x1y1 w l title "$FILE_NAME_18" lc rgb "#cfaf0f" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 
