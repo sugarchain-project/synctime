@@ -31,6 +31,11 @@ FILE_NAME_18="debug18-bloomy.log.csv"
 # FILE_NAME_5="cached_IBD_3_p2000_w4096.log.csv"
 # FILE_NAME_6="cached_IBD_4_p16_w1024.log.csv"
 
+# barrystyle IBD faster
+FILE_NAME_20="debug20-moonlight.log.csv"
+FILE_NAME_21="debug21-barry-4x.log.csv"
+FILE_NAME_22="debug22-barry-4x_2nd.log.csv"
+
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
 gnuplot -persist <<-EOFMarker
@@ -62,16 +67,9 @@ set key box opaque;
 set key noenhanced;
 
 plot \
-"$FILE_NAME_1" using 2:3 axis x1y1 w l title "$FILE_NAME_1" lc rgb "#0000cc" lw 1.0, \
-"$FILE_NAME_7" using 2:3 axis x1y1 w l title "$FILE_NAME_7(cee8630)" lc rgb "#e0e0e0" lw 1.0, \
-"$FILE_NAME_8" using 2:3 axis x1y1 w l title "$FILE_NAME_8(7dd2e3e)" lc rgb "#e0e0e0" lw 1.0, \
-"$FILE_NAME_9" using 2:3 axis x1y1 w l title "$FILE_NAME_9(8683428)" lc rgb "#e0e0e0" lw 1.0, \
-"$FILE_NAME_10" using 2:3 axis x1y1 w l title "$FILE_NAME_10(f9d0998)" lc rgb "#e0e0e0" lw 1.0, \
-"$FILE_NAME_14" using 2:3 axis x1y1 w l title "$FILE_NAME_14" lc rgb "#00aabb" lw 1.0, \
-"$FILE_NAME_15" using 2:3 axis x1y1 w l title "$FILE_NAME_15" lc rgb "#aabb00" lw 1.0, \
-"$FILE_NAME_16" using 2:3 axis x1y1 w l title "$FILE_NAME_16" lc rgb "#aa00cc" lw 1.0, \
-"$FILE_NAME_17" using 2:3 axis x1y1 w l title "$FILE_NAME_17" lc rgb "#af0fcf" lw 1.0, \
-"$FILE_NAME_18" using 2:3 axis x1y1 w l title "$FILE_NAME_18" lc rgb "#cfaf0f" lw 1.0,
+"$FILE_NAME_20" using 2:3 axis x1y1 w l title "$FILE_NAME_20" lc rgb "#00afaf" lw 1.0, \
+"$FILE_NAME_21" using 2:3 axis x1y1 w l title "$FILE_NAME_21" lc rgb "#af00af" lw 1.0, \
+"$FILE_NAME_22" using 2:3 axis x1y1 w l title "$FILE_NAME_22" lc rgb "#afaf00" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 
