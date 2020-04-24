@@ -38,6 +38,9 @@ FILE_NAME_22="debug22-barry-4x_2nd.log.csv"
 FILE_NAME_23="debug23-barry-8x.log.csv"
 FILE_NAME_24="debug24-barry-2x.log.csv"
 
+# BTC
+FILE_NAME_100="debug-BTC-0.16.3.log.csv"
+
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
 gnuplot -persist <<-EOFMarker
@@ -69,11 +72,7 @@ set key box opaque;
 set key noenhanced;
 
 plot \
-"$FILE_NAME_20" using 2:3 axis x1y1 w l title "$FILE_NAME_20" lc rgb "#af0000" lw 1.0, \
-"$FILE_NAME_21" using 2:3 axis x1y1 w l title "$FILE_NAME_21" lc rgb "#af00af" lw 1.0, \
-"$FILE_NAME_22" using 2:3 axis x1y1 w l title "$FILE_NAME_22" lc rgb "#afaf00" lw 1.0, \
-"$FILE_NAME_23" using 2:3 axis x1y1 w l title "$FILE_NAME_23" lc rgb "#00afaf" lw 1.0, \
-"$FILE_NAME_24" using 2:3 axis x1y1 w l title "$FILE_NAME_24" lc rgb "#00af00" lw 1.0,
+"$FILE_NAME_100" using 2:3 axis x1y1 w l title "$FILE_NAME_100" lc rgb "#af0000" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 
