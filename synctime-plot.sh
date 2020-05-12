@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ## INIT
-FILE_NAME_0="uncached.log.csv"
 FILE_NAME_1="debug.log.csv"
 FILE_NAME_2="debug2.log.csv"
 FILE_NAME_3="debug3.log.csv"
@@ -88,6 +87,9 @@ FILE_NAME_64="debug64-MHR_2.log.csv"
 FILE_NAME_65="debug65-MHR_4.log.csv"
 FILE_NAME_66="debug66_MHR_2_2nd.log.csv"
 
+# temp
+FILE_NAME_0="debug.log.csv"
+
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
 gnuplot -persist <<-EOFMarker
@@ -122,7 +124,8 @@ plot \
 "$FILE_NAME_50" using 2:3 axis x1y1 w l title "$FILE_NAME_50" lc rgb "#000000" lw 1.0, \
 "$FILE_NAME_63" using 2:3 axis x1y1 w l title "$FILE_NAME_63" lc rgb "#cf0000" lw 1.0, \
 "$FILE_NAME_64" using 2:3 axis x1y1 w l title "$FILE_NAME_64" lc rgb "#00cf00" lw 1.0, \
-"$FILE_NAME_66" using 2:3 axis x1y1 w l title "$FILE_NAME_66" lc rgb "#00cfcf" lw 1.0,
+"$FILE_NAME_66" using 2:3 axis x1y1 w l title "$FILE_NAME_66" lc rgb "#00cfcf" lw 1.0, \
+"$FILE_NAME_0" using 2:3 axis x1y1 w l title "$FILE_NAME_0" lc rgb "#000000" lw 1.0,
 # caution at the end: no "\"
 EOFMarker
 
