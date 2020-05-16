@@ -88,7 +88,14 @@ FILE_NAME_65="debug65-MHR_4.log.csv"
 FILE_NAME_66="debug66_MHR_2_2nd.log.csv"
 
 # temp
-FILE_NAME_0="debug.log.csv"
+# FILE_NAME_0="debug.log.csv"
+
+# v32
+FILE_NAME_70="debug70-moveCB.log.csv"
+FILE_NAME_71="debug71-b2000.log.csv"
+FILE_NAME_72="debug72-move2000.log.csv"
+FILE_NAME_73="debug73-v31.log.csv"
+FILE_NAME_74="debug74-v32.log.csv"
 
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
@@ -122,10 +129,12 @@ set key noenhanced;
 
 plot \
 "$FILE_NAME_50" using 2:3 axis x1y1 w l title "$FILE_NAME_50" lc rgb "#000000" lw 1.0, \
-"$FILE_NAME_63" using 2:3 axis x1y1 w l title "$FILE_NAME_63" lc rgb "#cf0000" lw 1.0, \
+"$FILE_NAME_63" using 2:3 axis x1y1 w l title "$FILE_NAME_63" lc rgb "#000000" lw 1.0, \
 "$FILE_NAME_64" using 2:3 axis x1y1 w l title "$FILE_NAME_64" lc rgb "#00cf00" lw 1.0, \
 "$FILE_NAME_66" using 2:3 axis x1y1 w l title "$FILE_NAME_66" lc rgb "#00cfcf" lw 1.0, \
-"$FILE_NAME_0" using 2:3 axis x1y1 w l title "$FILE_NAME_0" lc rgb "#000000" lw 1.0,
+"$FILE_NAME_71" using 2:3 axis x1y1 w l title "$FILE_NAME_71" lc rgb "#000000" lw 1.0, \
+"$FILE_NAME_73" using 2:3 axis x1y1 w l title "$FILE_NAME_73" lc rgb "#ccffcc" lw 1.0, \
+"$FILE_NAME_74" using 2:3 axis x1y1 w l title "$FILE_NAME_74" lc rgb "#ff0000" lw 1.0, \
 # caution at the end: no "\"
 EOFMarker
 
