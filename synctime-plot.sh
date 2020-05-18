@@ -97,6 +97,7 @@ FILE_NAME_72="debug72-move2000.log.csv"
 FILE_NAME_73="debug73-v31.log.csv"
 FILE_NAME_74="debug74-v32.log.csv"
 FILE_NAME_75="debug75-v32-w64.log.csv"
+FILE_NAME_76="debug76-v32-osx.log.csv"
 
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
@@ -134,6 +135,7 @@ plot \
 "$FILE_NAME_73" using 2:3 axis x1y1 w l title "$FILE_NAME_73" lc rgb "#ccffcc" lw 1.0, \
 "$FILE_NAME_74" using 2:3 axis x1y1 w l title "$FILE_NAME_74" lc rgb "#ff0000" lw 1.0, \
 "$FILE_NAME_75" using 2:3 axis x1y1 w l title "$FILE_NAME_75" lc rgb "#aaddaa" lw 1.0, \
+"$FILE_NAME_76" using 2:3 axis x1y1 w l title "$FILE_NAME_76" lc rgb "#aaaadd" lw 1.0, \
 # caution at the end: no "\"
 EOFMarker
 
