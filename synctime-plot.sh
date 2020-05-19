@@ -99,6 +99,10 @@ FILE_NAME_74="debug74-v32.log.csv"
 FILE_NAME_75="debug75-v32-w64.log.csv"
 FILE_NAME_76="debug76-v32-osx.log.csv"
 
+# VPS
+FILE_NAME_80="debug80-vps1-vtest-swap3gb.log.csv"
+FILE_NAME_81="debug81-vps2-vtest-swap4gb.log.csv"
+
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
 gnuplot -persist <<-EOFMarker
@@ -134,8 +138,10 @@ plot \
 "$FILE_NAME_71" using 2:3 axis x1y1 w l title "$FILE_NAME_71" lc rgb "#000000" lw 1.0, \
 "$FILE_NAME_73" using 2:3 axis x1y1 w l title "$FILE_NAME_73" lc rgb "#ccffcc" lw 1.0, \
 "$FILE_NAME_74" using 2:3 axis x1y1 w l title "$FILE_NAME_74" lc rgb "#ff0000" lw 1.0, \
-"$FILE_NAME_75" using 2:3 axis x1y1 w l title "$FILE_NAME_75" lc rgb "#aaddaa" lw 1.0, \
-"$FILE_NAME_76" using 2:3 axis x1y1 w l title "$FILE_NAME_76" lc rgb "#aaaadd" lw 1.0, \
+"$FILE_NAME_75" using 2:3 axis x1y1 w l title "WIN64_2cpu4096ram" lc rgb "#aaddaa" lw 1.0, \
+"$FILE_NAME_76" using 2:3 axis x1y1 w l title "OSX_2cpu4096ram" lc rgb "#aaaadd" lw 1.0, \
+"$FILE_NAME_80" using 2:3 axis x1y1 w l title "VPS_1cpu1024ram+3GBswap" lc rgb "#ddaadd" lw 1.0, \
+"$FILE_NAME_81" using 2:3 axis x1y1 w l title "VPS_1cpu1024ram+4GBswap" lc rgb "#aaddaa" lw 1.0, \
 # caution at the end: no "\"
 EOFMarker
 
