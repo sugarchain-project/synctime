@@ -103,6 +103,18 @@ FILE_NAME_76="debug76-v32-osx.log.csv"
 FILE_NAME_80="debug80-vps1-vtest-swap3gb.log.csv"
 FILE_NAME_81="debug81-vps2-vtest-swap4gb.log.csv"
 
+# vtest
+FILE_NAME_90="debug90-vtest.log.csv"
+FILE_NAME_91="debug91-nopow.log.csv"
+FILE_NAME_92="debug92-dbcache50_maxmempool10.log.csv"
+FILE_NAME_93="debug93-bootstrap.log.csv"
+FILE_NAME_94="debug94-8be.log.csv"
+FILE_NAME_95="debug95-fastsync.log.csv"
+FILE_NAME_96="debug96-fastsync-vps-3gb.log.csv"
+FILE_NAME_97="debug97-fastsync-vps-4gb.log.csv"
+FILE_NAME_98="debug98-fastsync-vps-4gb_2nd.log.csv"
+FILE_NAME_99="debug99-fastsync-vps-3gb_2nd.log.csv"
+
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
 gnuplot -persist <<-EOFMarker
@@ -142,6 +154,16 @@ plot \
 "$FILE_NAME_76" using 2:3 axis x1y1 w l title "OSX_2cpu4096ram" lc rgb "#aaaadd" lw 1.0, \
 "$FILE_NAME_80" using 2:3 axis x1y1 w l title "VPS_1cpu1024ram+3GBswap" lc rgb "#ddaadd" lw 1.0, \
 "$FILE_NAME_81" using 2:3 axis x1y1 w l title "VPS_1cpu1024ram+4GBswap" lc rgb "#aaddaa" lw 1.0, \
+"$FILE_NAME_90" using 2:3 axis x1y1 w l title "vtest" lc rgb "#00ddaa" lw 1.0, \
+"$FILE_NAME_91" using 2:3 axis x1y1 w l title "no_PoW_during_IBD" lc rgb "#00dd33" lw 1.0, \
+"$FILE_NAME_92" using 2:3 axis x1y1 w l title "dbcache50_maxmempool10" lc rgb "#dd1111" lw 1.0, \
+"$FILE_NAME_93" using 2:3 axis x1y1 w l title "bootstrap" lc rgb "#ddcc11" lw 1.0, \
+"$FILE_NAME_94" using 2:3 axis x1y1 w l title "vtest-8be" lc rgb "#ffccdd" lw 1.0, \
+"$FILE_NAME_95" using 2:3 axis x1y1 w l title "-fastsync" lc rgb "#ff0000" lw 1.0, \
+"$FILE_NAME_96" using 2:3 axis x1y1 w l title "-fastsync-vps-3gb" lc rgb "#000000" lw 1.0, \
+"$FILE_NAME_97" using 2:3 axis x1y1 w l title "-fastsync-vps-4gb" lc rgb "#0000ff" lw 1.0, \
+"$FILE_NAME_98" using 2:3 axis x1y1 w l title "-fastsync-vps-4gb_2nd" lc rgb "#0000ff" lw 1.0, \
+"$FILE_NAME_99" using 2:3 axis x1y1 w l title "-fastsync-vps-3gb_2nd" lc rgb "#0000ff" lw 1.0, \
 # caution at the end: no "\"
 EOFMarker
 
