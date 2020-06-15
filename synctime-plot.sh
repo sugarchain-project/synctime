@@ -109,11 +109,21 @@ FILE_NAME_91="debug91-nopow.log.csv"
 FILE_NAME_92="debug92-dbcache50_maxmempool10.log.csv"
 FILE_NAME_93="debug93-bootstrap.log.csv"
 FILE_NAME_94="debug94-8be.log.csv"
+
+# [PR] fastsync
 FILE_NAME_95="debug95-fastsync.log.csv"
 FILE_NAME_96="debug96-fastsync-vps-3gb.log.csv"
 FILE_NAME_97="debug97-fastsync-vps-4gb.log.csv"
 FILE_NAME_98="debug98-fastsync-vps-4gb_2nd.log.csv"
 FILE_NAME_99="debug99-fastsync-vps-3gb_2nd.log.csv"
+FILE_NAME_100="debug100-no-fastsync.log.csv"
+FILE_NAME_101="debug101-fastsync.log.csv"
+
+# v33
+FILE_NAME_102="debug102-v33.log.csv"
+FILE_NAME_103="debug103-vps3gb.log.csv"
+FILE_NAME_104="debug104-vps4gb.log.csv"
+FILE_NAME_105="debug105-aarch64.log.csv"
 
 ## DRAW PLOT
 OUTPUT_PNG="./png/synctime.png"
@@ -146,24 +156,13 @@ set key box opaque;
 set key noenhanced;
 
 plot \
-"$FILE_NAME_50" using 2:3 axis x1y1 w l title "$FILE_NAME_50" lc rgb "#000000" lw 1.0, \
-"$FILE_NAME_71" using 2:3 axis x1y1 w l title "$FILE_NAME_71" lc rgb "#000000" lw 1.0, \
-"$FILE_NAME_73" using 2:3 axis x1y1 w l title "$FILE_NAME_73" lc rgb "#ccffcc" lw 1.0, \
-"$FILE_NAME_74" using 2:3 axis x1y1 w l title "$FILE_NAME_74" lc rgb "#ff0000" lw 1.0, \
-"$FILE_NAME_75" using 2:3 axis x1y1 w l title "WIN64_2cpu4096ram" lc rgb "#aaddaa" lw 1.0, \
-"$FILE_NAME_76" using 2:3 axis x1y1 w l title "OSX_2cpu4096ram" lc rgb "#aaaadd" lw 1.0, \
-"$FILE_NAME_80" using 2:3 axis x1y1 w l title "VPS_1cpu1024ram+3GBswap" lc rgb "#ddaadd" lw 1.0, \
-"$FILE_NAME_81" using 2:3 axis x1y1 w l title "VPS_1cpu1024ram+4GBswap" lc rgb "#aaddaa" lw 1.0, \
-"$FILE_NAME_90" using 2:3 axis x1y1 w l title "vtest" lc rgb "#00ddaa" lw 1.0, \
-"$FILE_NAME_91" using 2:3 axis x1y1 w l title "no_PoW_during_IBD" lc rgb "#00dd33" lw 1.0, \
-"$FILE_NAME_92" using 2:3 axis x1y1 w l title "dbcache50_maxmempool10" lc rgb "#dd1111" lw 1.0, \
-"$FILE_NAME_93" using 2:3 axis x1y1 w l title "bootstrap" lc rgb "#ddcc11" lw 1.0, \
-"$FILE_NAME_94" using 2:3 axis x1y1 w l title "vtest-8be" lc rgb "#ffccdd" lw 1.0, \
-"$FILE_NAME_95" using 2:3 axis x1y1 w l title "-fastsync" lc rgb "#ff0000" lw 1.0, \
-"$FILE_NAME_96" using 2:3 axis x1y1 w l title "-fastsync-vps-3gb" lc rgb "#000000" lw 1.0, \
-"$FILE_NAME_97" using 2:3 axis x1y1 w l title "-fastsync-vps-4gb" lc rgb "#0000ff" lw 1.0, \
-"$FILE_NAME_98" using 2:3 axis x1y1 w l title "-fastsync-vps-4gb_2nd" lc rgb "#0000ff" lw 1.0, \
-"$FILE_NAME_99" using 2:3 axis x1y1 w l title "-fastsync-vps-3gb_2nd" lc rgb "#0000ff" lw 1.0, \
+"$FILE_NAME_73" using 2:3 axis x1y1 w l title "Ryzen1700+64GB+HDD" lc rgb "#00aabb" lw 1.0, \
+"$FILE_NAME_74" using 2:3 axis x1y1 w l title "Ryzen1700+64GB+HDD" lc rgb "#00bbcc" lw 1.0, \
+"$FILE_NAME_102" using 2:3 axis x1y1 w l title "Ryzen1700+64GB+HDD" lc rgb "#00ccdd" lw 1.0, \
+"$FILE_NAME_103" using 2:3 axis x1y1 w l title "1cpu+1GB+swap3GB" lc rgb "#aabb00" lw 1.0, \
+"$FILE_NAME_104" using 2:3 axis x1y1 w l title "1cpu+1GB+swap4GB" lc rgb "#bbcc00" lw 1.0, \
+"$FILE_NAME_105" using 2:3 axis x1y1 w l title "RPI-aarch64" lc rgb "#aa00bb" lw 1.0, \
+# "$FILE_NAME_50" using 2:3 axis x1y1 w l title "v30-moonlight" lc rgb "#000000" lw 1.0, \
 # caution at the end: no "\"
 EOFMarker
 
